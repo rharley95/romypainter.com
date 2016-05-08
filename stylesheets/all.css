@@ -1,55 +1,129 @@
-@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Muli:300);
+/* line 3, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+html {
+  margin: 0;
+  padding: 0; }
 
+/* line 7, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
 body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+  margin: 0;
+  padding: 0; }
 
+/* line 13, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
 h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
+  font-family: 'Droid Serif', serif;
+  font-size: 3em;
   margin: 0; }
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+/* line 19, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+p {
+  font-family: 'Muli', sans-serif; }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+/* Navigation */
+/* line 28, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.navigation {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+  height: 60px;
+  width: 100%;
+  font-family: 'Droid Serif', serif;
+  font-size: 15px;
+  box-shadow: 1px 1px 2px #ccc; }
+  /* line 42, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .navigation li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px; }
+  /* line 48, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .navigation a {
+    text-decoration: none;
+    color: #000; }
+  /* line 53, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .navigation a:hover {
+    color: #ccc; }
+  /* line 57, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .navigation strong {
+    font-size: 1.5em;
+    margin-right: 15px; }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
+/*footer*/
+/* line 65, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+footer {
+  height: 80px; }
+
+/*First Welcome section*/
+/* line 71, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.main {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 100px; }
+
+/* line 77, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+img {
+  float: left; }
+
+/* line 81, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.homedescription {
+  padding-top: 90px; }
+
+/*homework*/
+/* line 87, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.homework {
+  list-style: none; }
+  /* line 90, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .homework li {
+    margin-bottom: 5px; }
+  /* line 94, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .homework a {
+    text-decoration: none;
+    color: #000; }
+  /* line 100, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .homework a:hover {
+    color: #ccc; }
+
+/*homework visitors - personas */
+/* line 108, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.hw-exp {
+  clear: both;
+  margin-top: 40px;
+  width: 550px; }
+  /* line 113, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .hw-exp strong {
+    text-decoration: underline; }
+
+/* line 118, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.persona {
+  clear: both; }
+
+/* line 121, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.img-ex {
+  padding-bottom: 70px; }
+  /* line 124, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .img-ex img {
+    height: 300px; }
+
+/* line 130, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.cass {
+  margin-bottom: 30px; }
+
+/* line 134, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.bad,
+.good {
+  clear: both; }
+  /* line 137, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  .bad a,
+  .good a {
+    text-decoration: underline; }
+
+/* line 144, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.bad-img img,
+.good-img img {
+  height: 300px;
+  margin: 10px; }
+
+/*mobile compare and contrast*/
