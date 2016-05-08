@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Muli:300);
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+h1 {
+  font-family: 'Droid Serif', serif;
+  font-size: 3em;
+  margin: 0;
+}
+
+p {
+  font-family: 'Muli', sans-serif;
+}
+
+
+
+/* Navigation */
+
+
+.navigation {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+  height: 60px;
+  width: 100%;
+  font-family: 'Droid Serif', serif;
+  font-size: 15px;
+  box-shadow: 1px 1px 2px #ccc;
+
+
+  li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    a:hover {
+        color: #ccc;
+      }
+
+    strong{
+      font-size: 1.5em;
+      margin-right: 15px;
+    }
+
+}
+
+/*footer*/
+footer{
+  height: 80px;
+}
+
+/*First Welcome section*/
+
+.main {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+img{
+    float: left;
+  }
+
+.homedescription {
+    padding-top: 90px; 
+}
+
+/*homework*/
+
+.homework {
+  list-style: none;
+
+  li{
+    margin-bottom: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+
+  }
+
+  a:hover {
+        color: #ccc;
+
+      }
+}
+
+/*homework visitors - personas */
+
+.hw-exp {
+  clear: both;
+  margin-top: 40px;
+  width: 550px;
+ 
+ strong{
+  text-decoration: underline;
+ }
+
+}
+.persona {
+  clear: both;
+}
+.img-ex {
+  padding-bottom: 70px;
+
+  img{
+
+    height: 300px;
+  }
+}
+
+.cass {
+  margin-bottom: 30px;
+}
+
+.bad, 
+.good {
+  clear: both;
+  a{
+    text-decoration: underline;
+  }
+}
+
+.bad-img,
+.good-img {
+  img{
+    height: 300px;
+    margin: 10px;
+  }
+}
+
+
+/*mobile compare and contrast*/
