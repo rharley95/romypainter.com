@@ -100,30 +100,33 @@ img {
 .persona {
   clear: both; }
 
-/* line 121, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+/* line 123, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
 .img-ex {
   padding-bottom: 70px; }
-  /* line 124, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  /* line 126, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
   .img-ex img {
     height: 300px; }
 
-/* line 130, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+/* line 132, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
 .cass {
   margin-bottom: 30px; }
 
-/* line 134, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+/* line 136, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
 .bad,
 .good {
   clear: both; }
-  /* line 137, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+  /* line 139, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
   .bad a,
   .good a {
     text-decoration: underline; }
 
-/* line 144, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+/* line 146, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
 .bad-img img,
 .good-img img {
   height: 300px;
   margin: 10px; }
 
 /*mobile compare and contrast*/
+/* line 156, /Users/rominapainter/Sites/romypainter/source/stylesheets/all.scss */
+.freddy {
+  height: 300px; }
