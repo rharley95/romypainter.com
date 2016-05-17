@@ -1,13 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(https://fonts.googleapis.com/css?family=Muli:300);
+
 html {
   margin: 0;
   padding: 0;
+  padding-bottom: 100px;
 }
+
 body {
   margin: 0;
   padding: 0;
+  
 
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height: 40px;
+   width:100%;
+   background:#000;
+
+}
+
+main{
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 h1 {
@@ -16,7 +36,11 @@ h1 {
   margin: 0;
 }
 
-p {
+h2, h3, h4, h5, h6 {
+  font-family: 'Droid Serif', serif;
+}
+
+p, li {
   font-family: 'Muli', sans-serif;
 }
 
@@ -25,7 +49,7 @@ p {
 /* Navigation */
 
 
-.navigation {
+nav, .navigation {
   top: 0;
   left: 0;
   right: 0;
@@ -61,18 +85,6 @@ p {
 
 }
 
-/*footer*/
-footer{
-  height: 80px;
-}
-
-/*First Welcome section*/
-
-.main {
-  width: 55%;
-  margin: 0 auto;
-  margin-top: 100px;
-}
 
 img{
     float: left;
@@ -103,7 +115,6 @@ img{
       }
 }
 
-/*homework visitors - personas */
 
 .hw-exp {
   clear: both;
@@ -122,11 +133,7 @@ img{
 
 .img-ex {
   padding-bottom: 70px;
-
-  img{
-
     height: 300px;
-  }
 }
 
 .cass {
@@ -143,15 +150,11 @@ img{
 
 .bad-img,
 .good-img {
-  img{
+
     height: 300px;
     margin: 10px;
-  }
+
 }
-
-
-/*mobile compare and contrast*/
-
 
 .freddy {
   height: 300px;
@@ -160,3 +163,5 @@ img{
 .peers {
   clear: both;
 }
+
+
