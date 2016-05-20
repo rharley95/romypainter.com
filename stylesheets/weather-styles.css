@@ -11,86 +11,72 @@ header, h1 {
 
 /* line 15, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 nav {
-  background-color: #533a71;
+  background-color: #0B132B;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%; }
-  /* line 23, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  width: 100%;
+  height: 175px; }
+  /* line 24, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   nav span {
-    color: #9cec5b;
-    font-size: 2em;
+    color: #fff;
+    font-size: 5em;
     margin-left: -20px;
     font-family: 'Roboto', sans-serif; }
 
-/* line 35, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 36, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .weather-menu li {
   display: inline-block;
-  margin-top: 3px;
+  margin-top: 20px;
   margin-right: 25px; }
-/* line 42, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 43, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .weather-menu a {
   text-decoration: none;
-  color: #fff; }
-/* line 47, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  color: #fff;
+  font-size: 1em; }
+/* line 49, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .weather-menu a:hover {
   font-weight: bolder;
   color: #6184db; }
 
-/* line 56, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 58, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .banner-img {
   background-image: url("../images/mountains.jpg");
   background-position: center;
   background-repeat: repeat;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 300px;
-  margin-top: 70px;
+  height: 500px;
+  margin-top: 170px;
   float: left; }
-  /* line 66, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 68, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .banner-img .location {
     clear: both;
-    font-size: 4em;
+    font-size: 5em;
     color: #fff;
     border-bottom: thick dotted #fff;
-    margin-top: 75px;
-    margin-left: 25px;
-    width: 325px; }
-  /* line 76, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    margin-top: 175px;
+    margin-left: 30%;
+    width: 425px; }
+  /* line 79, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .banner-img .sun-icon {
-    margin-left: 160px;
+    margin-left: 48%;
     margin-top: 20px; }
 
-/* line 84, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 87, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .weather-data {
   clear: both; }
-  /* line 88, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
-  .weather-data .high {
-    background-color: #9cec5b;
-    height: 100px; }
-  /* line 95, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
-  .weather-data .low {
-    background-color: #9cec5b;
-    height: 100px; }
-  /* line 100, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 89, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data h1 {
     margin: 0;
     font-size: 2em;
-    padding-top: 20px; }
-  /* line 106, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
-  .weather-data .precipitation {
-    background-color: #9cec5b; }
-  /* line 110, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
-  .weather-data .wind {
-    background-color: #50c5b7; }
-  /* line 114, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
-  .weather-data .direction {
-    background-color: #6184db; }
-  /* line 118, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
-  .weather-data .summary {
-    background-color: #46B1C9; }
+    padding-top: 20px;
+    text-align: center; }
+  /* line 96, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  .weather-data span {
+    text-align: center; }
 
-/* line 133, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 113, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 footer {
   position: relative;
   bottom: 0;
