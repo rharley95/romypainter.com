@@ -55,6 +55,8 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+page "/weather-site/*", :layout => "weather"
+
 # Build-specific configuration
 activate :deploy do |deploy|
   deploy.method = :git

@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header, h1 {
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+nav {
+	background-color: #533a71;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+
+	span {
+		color: #9cec5b;
+		font-size: 2em;
+		margin-left: -20px;
+		font-family: 'Roboto', sans-serif;
+
+
+	}
+}
+
+.weather-menu {
+
+	li{
+		display: inline-block;
+		margin-top: 3px;
+		margin-right: 25px;
+
+	}
+
+	a {
+		text-decoration: none;
+		color:#fff;
+	}
+
+		a:hover {
+			font-weight: bolder;
+			color: #6184db;
+		}
+
+
+}
+
+
+.banner-img {
+  background-image: url('../images/mountains.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 300px;
+  margin-top: 70px;
+  float: left;
+
+  .location {
+	clear: both;
+	font-size: 4em;
+	color: #fff;
+	border-bottom: thick dotted #fff;
+	margin-top: 75px;
+	margin-left: 25px;
+	width: 325px;
+}
+
+  .sun-icon {
+	margin-left: 160px;
+	margin-top: 20px;
+}
+
+}
+
+
+.weather-data {
+	clear: both;
+
+	
+	.high {
+	background-color: #9cec5b;
+	height: 100px;
+
+
+	}
+
+	.low {
+	background-color: #9cec5b;
+	height: 100px;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 2em;
+		padding-top: 20px;
+	}
+
+	.precipitation {
+	background-color: #9cec5b;
+	}
+
+	.wind {
+		background-color: #50c5b7;
+	}
+
+	.direction {
+		background-color: #6184db;
+	}
+
+	.summary {
+		background-color: #46B1C9;
+	}
+}
+
+
+
+// footer {
+// 	height: 100px;
+// 	clear: both;
+// 	bottom: 0;
+// 	left: 0;
+// 	background-color: #84DCCF;
+// }
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  clear:both;
+} 
+
