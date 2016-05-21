@@ -3,12 +3,17 @@
 
 
 body {
-	margin: 0;
+	margin-top: 80px;
+	margin-left: 0;
+	margin-right: 0;
 	font-family: 'Open Sans', sans-serif;
 }
 
-header, h1 {
+header, h1, h3 {
 	font-family: 'Roboto', sans-serif;
+}
+
+main {
 	
 }
 
@@ -18,40 +23,32 @@ nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 175px;
+	height: 80px;
 	
-
 	span {
 		color: #fff;
-		font-size: 5em;
+		font-size: 2em;
 		margin-left: -20px;
 		font-family: 'Roboto', sans-serif;
-
-
 	}
 }
 
 .weather-menu {
-
+	margin-left: 10px;
 	li{
 		display: inline-block;
-		margin-top: 20px;
-		margin-right: 25px;
-
+		margin-left: 25px;
+		font-size: .2em;
 	}
-
 	a {
 		text-decoration: none;
 		color:#fff;
 		font-size: 1em;
 	}
-
 		a:hover {
 			font-weight: bolder;
 			color: #6184db;
 		}
-
-
 }
 
 
@@ -61,59 +58,87 @@ nav {
   background-repeat: repeat;
   background-color: rgba(0, 0, 0, .5);
   width: 100%;
-  height: 500px;
-  margin-top: 170px;
-  float: left;
+  height: 300px;
+
 
   .location {
 	clear: both;
-	font-size: 5em;
+	font-size: 3em;
 	color: #fff;
-	border-bottom: thick dotted #fff;
-	margin-top: 175px;
-	margin-left: 30%;
-	width: 425px;
-
+	padding-top: 35%;
+	margin-left: 10px;
+	
 }
-
-  .sun-icon {
-	margin-left: 48%;
-	margin-top: 20px;
-}
-
 }
 
 
 .weather-data {
 	clear: both;
-	h1 {
-		margin: 0;
-		font-size: 2em;
-		padding-top: 20px;
-		text-align: center;
+
+	.week {
+		li {
+			display: inline-block;
+		}
+
+		a{
+			
+			color: #000;
+		}
 	}
+
+	h1, h3 {
+		margin: 0;
+		text-align: center;
+		color: #fff;
+	}
+	h1 {
+		font-size: 2em;
+	}
+
 
 	span {
-		text-align: center;
+		display: inline-block;
 	}
 
-	
+	.summary {
+		background-image: url(../images/sunny.jpg);
+		background-position: center right;
+		height: 65px;
+
+		h1{
+			padding-top: 10px;
+		}
+	}
+
+	.high {
+		background-color: #f2646e;
+
+
+	}
+
+	.low {
+		background-color: #64aaf2;
+	}
+
+	.precipitation, .wind, .direction {
+		background-color: #163481;
+	}
 }
 
 
+.sketch {
+	img{
+		height: 220px;
+	}
+}
 
-// footer {
-// 	height: 100px;
-// 	clear: both;
-// 	bottom: 0;
-// 	left: 0;
-// 	background-color: #84DCCF;
-// }
 
 footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  clear:both;
+	background-color: #0B132B;
+	color: #fff;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	clear:both;
 } 
 
