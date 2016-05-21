@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Romina Palacios</title>
 
@@ -14,9 +17,8 @@
   <body class="weather-site weather-site_index">
 
 		<nav>
-			
 			<ul class="weather-menu">
-				<li><span>WC</span></li>
+				<span>WC</span>
 				<li><a href="#">Franklin</a></li>
 				<li><a href="#">Greenville</a></li>
 				<li><a href="#">Springfield</a></li>
@@ -27,44 +29,59 @@
 <section class="banner-img">
 
 	<header class="location">Franklin, ID</header>
-	<img class="sun-icon" src="../images/wb-sunny.png">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/weather-styles.scss" property="what">
+	
 
 </section>
 
 <section class="weather-data">
+	
+		<ul class="week">
+			<li><a href="#">Sun.</a></li>
+			<li><a href="#">Mon.</a></li>
+			<li><a href="#">Tue.</a></li>
+			<li><a href="#">Wed.</a></li>
+			<li><a href="#">Thru.</a></li>
+			<li><a href="#">Fri.</a></li>
+			<li><a href="#">Sat.</a></li>
+		</ul>
+	
+	<div class="summary">
+		<h1>Sunny</h1>
+	</div>
+
 	<div class="high">
 	<h1>High:</h1>
-	<span>90</span>
+	<h3>90</h3>
 	</div>
 
 	<div class="low">
 	<h1>Low:</h1>
-	<span>90</span>
+	<h3>66</h3>
 	</div>
 
 	<div class="precipitation">
 		<h1>Precipitation:</h1>
-		<span>0</span>
+		<h3>0</h3>
 	</div>
 
 	<div class="wind">
-		<h1>Wind of 1 - 5</h1>
+		<h3>Wind of 1 - 5</h3>
 	</div>
 
 	<div class="direction">
-		<h1>Southwest</h1>
-	</div>
-
-	<div class="summary">
-		<h1>SUNNY</h1>
+		<h3>Going Southwest</h3>
 	</div>
 </section>
-
+<section class="sketch">
+	<h1>Sketches</h1>
+	<img src="../images/iphone.png" alt="my sketch">
+</section>
 </main>
 
 
       <footer>
-      	Here is the content for the footer.
+      	Thank you for visiting!
       </footer>
     </body>
     </html>
