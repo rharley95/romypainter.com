@@ -1,144 +1,328 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 body {
-	margin-top: 80px;
-	margin-left: 0;
-	margin-right: 0;
-	font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header, h1, h3 {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+
 main {
-	
+    
 }
 
 nav {
-	background-color: #0B132B;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 80px;
-	
-	span {
-		color: #fff;
-		font-size: 2em;
-		margin-left: -20px;
-		font-family: 'Roboto', sans-serif;
-	}
+    background-color: #0B132B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 9999;
 }
 
 .weather-menu {
-	margin-left: 10px;
-	li{
-		display: inline-block;
-		margin-left: 25px;
-		font-size: .2em;
-	}
-	a {
-		text-decoration: none;
-		color:#fff;
-		font-size: 1em;
-	}
-		a:hover {
-			font-weight: bolder;
-			color: #6184db;
-		}
+    padding: 0;
+    text-align: center;
+
+    li{
+        display: inline-block;
+        margin-left: 15px;
+        font-size: 15px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    a {
+        text-decoration: none;
+        color:#fff;
+        
+    }
+        a:hover {
+            color: #6184db;
+        }
 }
 
 
 .banner-img {
   background-image: url('../images/mountains.jpg');
+  background-attachment: fixed;
   background-position: center;
-  background-repeat: repeat;
-  background-color: rgba(0, 0, 0, .5);
+  background-repeat: no-repeat;
+  // background-color: rgba(0, 0, 0, .5);
   width: 100%;
-  height: 300px;
+  // height: 150px;
 
 
-  .location {
-	clear: both;
-	font-size: 3em;
-	color: #fff;
-	padding-top: 35%;
-	margin-left: 10px;
-	
-}
+    .location {
+        text-align: center;
+        line-height: 150px;
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
+    }
 }
 
 
 .weather-data {
-	clear: both;
+    clear: both;
 
-	.week {
-		li {
-			display: inline-block;
-		}
+    .week {
+        padding: 0;
+        li {
+            display: inline-block;
+        }
 
-		a{
-			
-			color: #000;
-		}
-	}
+        a{  
+            color: #000;
+        }
+    }
 
-	h1, h3 {
-		margin: 0;
-		text-align: center;
-		color: #fff;
-	}
-	h1 {
-		font-size: 2em;
-	}
+    h2, h3 {
+        margin: 0;
+        text-align: center;
+        color: #000;
+    }
 
+    h1 {
+        font-size: 2em;
+    }
 
-	span {
-		display: inline-block;
-	}
+    .summary, 
+    .high, 
+    .low, 
+    .precipitation, 
+    .wind, 
+    .direction {
+        position: relative;
+        &:before {
+            background-image: url('../images/mountains.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            content: "";
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+            position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            z-index: 1;
+        }
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            z-index: 2;
+        }       
+        * { 
+            position: relative;
+            z-index: 3;
+        }
+    }
+    .summary {
+        height: 50px;
+        &:after {
+            background-color: rgba(#E3BB88, .5);
+        }
+    }
 
-	.summary {
-		background-image: url(../images/sunny.jpg);
-		background-position: center right;
-		height: 65px;
+    .detail-data{
+        margin: 0;
+        text-align: center;
+        padding: 0;
 
-		h1{
-			padding-top: 10px;
-		}
-	}
+        li{
+            list-style: none;
+        }
+    }
 
-	.high {
-		background-color: #f2646e;
+    .high {
+        &:after {
+            background-color: rgba(#DB9864, .5);
+        }
+    }
 
+    .low {
+        &:after {
+            background-color: rgba(#B1695A, .5);
+        }
+    }
 
-	}
-
-	.low {
-		background-color: #64aaf2;
-	}
-
-	.precipitation, .wind, .direction {
-		background-color: #163481;
-	}
+    .precipitation {
+        &:after {
+            background-color: rgba(#644749, .5);
+        }
+    }
+    .precipitation, .wind, .direction {
+        
+    }
 }
 
 
 .sketch {
-	img{
-		height: 220px;
-	}
+    img{
+        height: 220px;
+    }
 }
 
 
 footer {
-	background-color: #0B132B;
-	color: #fff;
-	position: relative;
-	bottom: 0;
-	left: 0;
-	clear:both;
+    background-color: #0B132B;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    clear:both;
 } 
 
+.hourly {
+    display: none;
+}
+
+.map {
+    display: none;
+}
+.fact {
+        background-color: #f76580;
+        color: #fff;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        clear: both;
+        margin-top: 20px;
+        padding-bottom: 5px;
+
+
+        h2{
+            margin: 0;
+        }
+
+    }
+
+    .video {
+        display: none;
+    }
+
+/*media queries*/
+
+@media only screen and (min-width: 768px) {
+    .banner-img {
+        height: 300px;
+    }
+    .detail-data {
+        li {
+            border-radius: 4px;
+            float: left;
+            height: 90px;
+            margin: 0 2px;
+            padding: 20px 0;
+            width: 15.666666667%;        
+            }
+    }
+
+    .hourly {
+        width: 45%;
+        display: block;
+        background-color: #f8b085;
+        color: #fff;
+        margin-left: 20px;
+
+        h2 {
+            margin-left: 20px;
+        }
+
+        .am, .pm {
+            display: inline-flex;
+            flex-direction: column;
+
+        }
+
+        .am {
+            align-items: flex-end;
+        }
+        li{
+            list-style: none;
+        }
+
+
+    }
+
+    .map {
+        background-color: #d4a5ea;
+        color: #fff;
+        width: 45%;
+        float: right;
+        display: inline-block;
+        margin-top: -350px;
+        text-align: center;
+        margin-right: 20px;
+
+        img{
+            margin-top: 20px;
+            height: 100px;
+           
+        }
+
+        h2{
+            margin: 0;
+        }
+
+
+    }
+
+    .fact {
+        background-color: #f76580;
+        color: #fff;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        clear: both;
+        margin-top: 20px;
+        padding-bottom: 5px;
+
+
+        h2{
+            margin: 0;
+        }
+
+    }
+
+    .video {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1124px) {
+
+    .video {
+        display: inline-block;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 20px;
+    }
+
+}
