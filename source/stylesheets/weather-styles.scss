@@ -21,25 +21,30 @@ header, h1, h3 {
 
 
 main {
-    
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
-    background-color: #0B132B;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
     z-index: 9999;
 }
 
 .weather-menu {
+    margin: 0;
+    background-color: #0B132B;
+    height: 50px;
+    display: flex;
     padding: 0;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+
 
     li{
-        display: inline-block;
+        list-style: none;
         margin-left: 15px;
         font-size: 15px;
 
@@ -67,6 +72,9 @@ nav {
   width: 100%;
   // height: 150px;
 
+  .weather-site_greenville & {
+    background-image: url('../images/storm.jpg');
+  }
 
     .location {
         text-align: center;
@@ -125,6 +133,11 @@ nav {
                 right: 0;
                 bottom: 0;
             z-index: 1;
+
+            .weather-site_greenville & {
+    background-image: url('../images/storm.jpg');
+  }
+
         }
         &:after {
             content: "";
@@ -141,32 +154,56 @@ nav {
             z-index: 3;
         }
     }
+
+
     .summary {
-        height: 50px;
+        height: 100px;
         &:after {
             background-color: rgba(#E3BB88, .5);
+
+    .weather-site_greenville & {
+    background-color: rgba(#93b3ee, .5);
+  
         }
     }
-
+}
     .detail-data{
+        display: flex;
+        flex-direction: column;
         margin: 0;
-        text-align: center;
         padding: 0;
 
+
         li{
+            display: flex;
             list-style: none;
+            min-height: 55px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
         }
     }
 
     .high {
         &:after {
             background-color: rgba(#DB9864, .5);
+
+        .weather-site_greenville & {
+    background-color: rgba(#ccc, .5);
+  }
         }
+
+
     }
 
     .low {
         &:after {
             background-color: rgba(#B1695A, .5);
+
+              .weather-site_greenville & {
+    background-color: rgba(#445451, .5);
+  
+        }
         }
     }
 
@@ -175,8 +212,27 @@ nav {
             background-color: rgba(#644749, .5);
         }
     }
-    .precipitation, .wind, .direction {
-        
+    .wind, .direction {
+       
+    }
+
+    .wind {
+         &:after {
+            background-color: rgba(#643462, .5);
+
+        }
+    }
+
+    .direction {
+        color: #fff;
+         &:after {
+            background-color: rgba(#000, .5);
+
+            .weather-site_greenville & {
+    background-color: rgba(#FFF, .5);
+  
+        }
+        }
     }
 }
 
@@ -207,17 +263,10 @@ footer {
 .fact {
         background-color: #f76580;
         color: #fff;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        clear: both;
-        margin-top: 20px;
-        padding-bottom: 5px;
 
 
         h2{
-            margin: 0;
+            
         }
 
     }
@@ -232,23 +281,56 @@ footer {
     .banner-img {
         height: 300px;
     }
-    .detail-data {
+
+    .second {
+        display: flex;
+
+    }
+    .map {
+
+        .weather-site_greenville & {
+    background-color: #5d81ad;
+
+
+
+  
+        }
+
+    }
+
+    .hourly {
+        margin: 2%;
+        text-align: center;
+
+           .weather-site_greenville & {
+    background-color: #297feb;
+  
+        }
+
+    }
+
+    .hourly, .map {
+        margin: 2%;
+        text-align: center;
+
+    }
+    .weather-data .detail-data {
+        flex-direction: row;
+         margin: 0 2%;  
         li {
             border-radius: 4px;
-            float: left;
-            height: 90px;
-            margin: 0 2px;
-            padding: 20px 0;
-            width: 15.666666667%;        
+            margin: 0 .5%;
+            padding: 20px 0; 
+            flex: 1;
+
             }
     }
 
     .hourly {
-        width: 45%;
         display: block;
         background-color: #f8b085;
         color: #fff;
-        margin-left: 20px;
+        flex-basis: 50%;
 
         h2 {
             margin-left: 20px;
@@ -271,14 +353,11 @@ footer {
     }
 
     .map {
+        display: block;
         background-color: #d4a5ea;
         color: #fff;
-        width: 45%;
-        float: right;
-        display: inline-block;
-        margin-top: -350px;
-        text-align: center;
-        margin-right: 20px;
+        flex-basis: 50%;
+
 
         img{
             margin-top: 20px;
@@ -296,13 +375,12 @@ footer {
     .fact {
         background-color: #f76580;
         color: #fff;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        clear: both;
-        margin-top: 20px;
-        padding-bottom: 5px;
+        margin: 0 2%;
+
+        .weather-site_greenville & {
+    background-color: #184781;
+    text-align: center;
+}
 
 
         h2{
@@ -316,13 +394,16 @@ footer {
     }
 }
 
+.sketch {
+    margin: 0 2%;    
+}
+
 @media only screen and (min-width: 1124px) {
 
     .video {
-        display: inline-block;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: 20px;
+        display: block;
+        margin: 0 2%;
+        text-align: center;
     }
 
 }
