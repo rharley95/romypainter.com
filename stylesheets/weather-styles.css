@@ -19,74 +19,85 @@ body {
 header, h1, h3 {
   font-family: 'Roboto', sans-serif; }
 
-/* line 27, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 23, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+main {
+  display: flex;
+  flex-direction: column; }
+
+/* line 28, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 nav {
-  background-color: #0B132B;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
   z-index: 9999; }
 
-/* line 37, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 36, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .weather-menu {
+  margin: 0;
+  background-color: #0B132B;
+  height: 50px;
+  display: flex;
   padding: 0;
-  text-align: center; }
-  /* line 41, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  justify-content: center;
+  align-items: center; }
+  /* line 46, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-menu li {
-    display: inline-block;
+    list-style: none;
     margin-left: 15px;
     font-size: 15px; }
-    /* line 46, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 51, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .weather-menu li:first-child {
       margin-left: 0; }
-  /* line 50, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 55, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-menu a {
     text-decoration: none;
     color: #fff; }
-  /* line 55, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 60, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-menu a:hover {
     color: #6184db; }
 
-/* line 61, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 66, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .banner-img {
   background-image: url("../images/mountains.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%; }
-  /* line 71, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 75, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  .weather-site_greenville .banner-img {
+    background-image: url("../images/storm.jpg"); }
+  /* line 79, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .banner-img .location {
     text-align: center;
     line-height: 150px; }
-    /* line 74, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 82, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .banner-img .location h1 {
       margin: 0;
       font-size: 2.5em;
       color: #fff; }
 
-/* line 83, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 91, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .weather-data {
   clear: both; }
-  /* line 86, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 94, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data .week {
     padding: 0; }
-    /* line 88, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 96, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .weather-data .week li {
       display: inline-block; }
-    /* line 92, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 100, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .weather-data .week a {
       color: #000; }
-  /* line 97, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 105, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data h2, .weather-data h3 {
     margin: 0;
     text-align: center;
     color: #000; }
-  /* line 103, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 111, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data h1 {
     font-size: 2em; }
-  /* line 107, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 115, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data .summary,
   .weather-data .high,
   .weather-data .low,
@@ -94,7 +105,7 @@ nav {
   .weather-data .wind,
   .weather-data .direction {
     position: relative; }
-    /* line 114, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 122, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .weather-data .summary:before,
     .weather-data .high:before,
     .weather-data .low:before,
@@ -114,7 +125,15 @@ nav {
       right: 0;
       bottom: 0;
       z-index: 1; }
-    /* line 129, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+      /* line 137, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+      .weather-site_greenville .weather-data .summary:before, .weather-site_greenville
+      .weather-data .high:before, .weather-site_greenville
+      .weather-data .low:before, .weather-site_greenville
+      .weather-data .precipitation:before, .weather-site_greenville
+      .weather-data .wind:before, .weather-site_greenville
+      .weather-data .direction:before {
+        background-image: url("../images/storm.jpg"); }
+    /* line 142, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .weather-data .summary:after,
     .weather-data .high:after,
     .weather-data .low:after,
@@ -129,7 +148,7 @@ nav {
       right: 0;
       bottom: 0;
       z-index: 2; }
-    /* line 139, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 152, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .weather-data .summary *,
     .weather-data .high *,
     .weather-data .low *,
@@ -138,35 +157,62 @@ nav {
     .weather-data .direction * {
       position: relative;
       z-index: 3; }
-  /* line 144, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 159, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data .summary {
-    height: 50px; }
-    /* line 146, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    height: 100px; }
+    /* line 161, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .weather-data .summary:after {
       background-color: rgba(227, 187, 136, 0.5); }
-  /* line 151, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+      /* line 164, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+      .weather-site_greenville .weather-data .summary:after {
+        background-color: rgba(147, 179, 238, 0.5); }
+  /* line 170, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data .detail-data {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    text-align: center;
     padding: 0; }
-    /* line 156, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 177, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .weather-data .detail-data li {
-      list-style: none; }
-  /* line 162, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+      display: flex;
+      list-style: none;
+      min-height: 55px;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+  /* line 188, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data .high:after {
     background-color: rgba(219, 152, 100, 0.5); }
-  /* line 168, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 191, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    .weather-site_greenville .weather-data .high:after {
+      background-color: rgba(204, 204, 204, 0.5); }
+  /* line 200, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data .low:after {
     background-color: rgba(177, 105, 90, 0.5); }
-  /* line 174, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 203, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    .weather-site_greenville .weather-data .low:after {
+      background-color: rgba(68, 84, 81, 0.5); }
+  /* line 211, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .weather-data .precipitation:after {
     background-color: rgba(100, 71, 73, 0.5); }
+  /* line 220, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  .weather-data .wind:after {
+    background-color: rgba(100, 52, 98, 0.5); }
+  /* line 226, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  .weather-data .direction {
+    color: #fff; }
+    /* line 228, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    .weather-data .direction:after {
+      background-color: rgba(0, 0, 0, 0.5); }
+      /* line 231, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+      .weather-site_greenville .weather-data .direction:after {
+        background-color: rgba(255, 255, 255, 0.5); }
 
-/* line 185, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 241, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .sketch img {
   height: 220px; }
 
-/* line 191, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 247, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 footer {
   background-color: #0B132B;
   color: #fff;
@@ -175,109 +221,118 @@ footer {
   left: 0;
   clear: both; }
 
-/* line 200, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 256, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .hourly {
   display: none; }
 
-/* line 204, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 260, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .map {
   display: none; }
 
-/* line 207, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 263, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .fact {
   background-color: #f76580;
-  color: #fff;
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  clear: both;
-  margin-top: 20px;
-  padding-bottom: 5px; }
-  /* line 219, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
-  .fact h2 {
-    margin: 0; }
+  color: #fff; }
 
-/* line 225, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+/* line 274, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
 .video {
   display: none; }
 
 /*media queries*/
 @media only screen and (min-width: 768px) {
-  /* line 232, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 281, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .banner-img {
     height: 300px; }
 
-  /* line 236, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
-  .detail-data li {
-    border-radius: 4px;
-    float: left;
-    height: 90px;
-    margin: 0 2px;
-    padding: 20px 0;
-    width: 15.666666667%; }
+  /* line 285, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  .second {
+    display: flex; }
 
-  /* line 246, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 291, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  .weather-site_greenville .map {
+    background-color: #5d81ad; }
+
+  /* line 301, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .hourly {
-    width: 45%;
+    margin: 2%;
+    text-align: center; }
+    /* line 305, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    .weather-site_greenville .hourly {
+      background-color: #297feb; }
+
+  /* line 312, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  .hourly, .map {
+    margin: 2%;
+    text-align: center; }
+
+  /* line 317, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  .weather-data .detail-data {
+    flex-direction: row;
+    margin: 0 2%; }
+    /* line 320, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    .weather-data .detail-data li {
+      border-radius: 4px;
+      margin: 0 .5%;
+      padding: 20px 0;
+      flex: 1; }
+
+  /* line 329, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  .hourly {
     display: block;
     background-color: #f8b085;
     color: #fff;
-    margin-left: 20px; }
-    /* line 253, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    flex-basis: 50%; }
+    /* line 335, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .hourly h2 {
       margin-left: 20px; }
-    /* line 257, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 339, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .hourly .am, .hourly .pm {
       display: inline-flex;
       flex-direction: column; }
-    /* line 263, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 345, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .hourly .am {
       align-items: flex-end; }
-    /* line 266, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 348, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .hourly li {
       list-style: none; }
 
-  /* line 273, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 355, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .map {
+    display: block;
     background-color: #d4a5ea;
     color: #fff;
-    width: 45%;
-    float: right;
-    display: inline-block;
-    margin-top: -350px;
-    text-align: center;
-    margin-right: 20px; }
-    /* line 283, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    flex-basis: 50%; }
+    /* line 362, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .map img {
       margin-top: 20px;
       height: 100px; }
-    /* line 289, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    /* line 368, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .map h2 {
       margin: 0; }
 
-  /* line 296, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 375, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .fact {
     background-color: #f76580;
     color: #fff;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    clear: both;
-    margin-top: 20px;
-    padding-bottom: 5px; }
-    /* line 308, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    margin: 0 2%; }
+    /* line 380, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+    .weather-site_greenville .fact {
+      background-color: #184781;
+      text-align: center; }
+    /* line 386, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
     .fact h2 {
       margin: 0; }
 
-  /* line 314, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 392, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .video {
     display: none; } }
+/* line 397, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+.sketch {
+  margin: 0 2%; }
+
 @media only screen and (min-width: 1124px) {
-  /* line 321, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
+  /* line 403, /Users/rominapainter/Sites/romypainter/source/stylesheets/weather-styles.scss */
   .video {
-    display: inline-block;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 20px; } }
+    display: block;
+    margin: 0 2%;
+    text-align: center; } }
