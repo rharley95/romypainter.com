@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+
+
+    <%= stylesheet_link_tag "responsive.css" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+  <body class="<%= page_classes %>">
+
+		
+      <%= yield %>
+
+
+    </body>
+    </html>

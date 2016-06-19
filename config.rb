@@ -58,6 +58,8 @@ set :images_dir, 'images'
 
 page "/weather-site/*", :layout => "weather"
 
+page "/responsive/*", :layout => "responsive"
+
 # Build-specific configuration
 activate :deploy do |deploy|
   deploy.method = :git
