@@ -60,6 +60,8 @@ page "/weather-site/*", :layout => "weather"
 
 page "/responsive/*", :layout => "responsive"
 
+page "/responsive/*", :layout => "jquery"
+
 # Build-specific configuration
 activate :deploy do |deploy|
   deploy.method = :git
